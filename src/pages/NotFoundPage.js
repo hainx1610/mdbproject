@@ -12,7 +12,7 @@ function NotFoundPage() {
           Sorry, we couldn’t find the page you requested.
         </Typography>
         <Button to="/" variant="contained" component={RouterLink}>
-          Go to Home
+          Go to Homepage
         </Button>
       </Box>
     </Container>

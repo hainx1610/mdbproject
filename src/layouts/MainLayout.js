@@ -1,19 +1,25 @@
 import { Outlet } from "react-router-dom";
-import { Box, Stack } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import MainFooter from "./MainFooter";
 import MainHeader from "./MainHeader";
 
 function MainLayout() {
   return (
-    <Stack sx={{ minHeight: "100vh" }}>
-      <MainHeader />
-
-      <Outlet />
-
-      <Box sx={{ flexGrow: 1 }} />
-
-      <MainFooter />
-    </Stack>
+    <Grid
+      container
+      justifyContent="center"
+      sx={{ bgcolor: "primary.darkerEven" }}
+    >
+      <Grid item xs={12}>
+        <MainHeader />
+      </Grid>
+      <Grid item xs={10} mt={5}>
+        <Outlet />
+      </Grid>
+      <Grid item xs={12}>
+        <MainFooter />
+      </Grid>
+    </Grid>
   );
 }
 
