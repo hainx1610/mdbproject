@@ -7,18 +7,18 @@ import Chip from "@mui/material/Chip";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import RecommendIcon from "@mui/icons-material/Recommend";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
 import Divider from "@mui/material/Divider";
 import { useParams } from "react-router-dom";
 // import StarIcon from "@mui/icons-material/Star";
-import IconButton from "@mui/material/IconButton";
+// import IconButton from "@mui/material/IconButton";
 import Skeleton from "@mui/material/Skeleton";
 import StarsIcon from "@mui/icons-material/Stars";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+// import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 // import VideoPlayer from "./VideoPlayer";
 
 function MDetailCard({ movieDetail, loading }) {
-  let { movieId } = useParams();
+  // let { movieId } = useParams();
   const [movieError, setmovieError] = useState();
 
   // const addFavMovie = (title, poster, voteA, voteC, id) => {
